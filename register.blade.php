@@ -1,541 +1,923 @@
-<!doctype html>
-<html class="no-js" lang="zxx">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Topico - Clean, Minimal E-commerce HTML5 Template </title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html lang="en">
 
-        <!-- Place favicon.ico in the root directory -->
-        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>E-come | Multi-Purpose HTML Template for Electronics Store</title>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
 
-		<!-- CSS here -->
-        <link rel="stylesheet" href="assets/css/preloader.css">
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/slick.css">
-        <link rel="stylesheet" href="assets/css/backToTop.css">
-        <link rel="stylesheet" href="assets/css/meanmenu.css">
-        <link rel="stylesheet" href="assets/css/nice-select.css">
-        <link rel="stylesheet" href="assets/css/magnific-popup.css">
-        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-        <link rel="stylesheet" href="assets/css/animate.min.css">
-        <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
-        <link rel="stylesheet" href="assets/css/fontAwesome5Pro.css">
-        <link rel="stylesheet" href="assets/css/ui-range-slider.css">
-        <link rel="stylesheet" href="assets/css/default.css">
-        <link rel="stylesheet" href="assets/css/style.css">
-    </head>
-    <body>
-        <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
+<body>
+    <!-- push menu-->
+    <div class="pushmenu menu-home5">
+        <div class="menu-push">
+            <span class="close-left js-close"><i class="icon-close f-20"></i></span>
+            <div class="clearfix"></div>
+            <form role="search" method="get" id="searchform" class="searchform" action="/search">
+               <div>
+                  <label class="screen-reader-text" for="q"></label>
+                  <input type="text" placeholder="Search for products" value="" name="q" id="q" autocomplete="off"><input type="hidden" name="type" value="product"><button type="submit" id="searchsubmit"><i class="ion-ios-search-strong"></i></button>
+               </div>
+            </form>
+            <ul class="nav-home5 js-menubar">
+                <li class="level1 active dropdown"><a href="#">Home</a>
+                    <span class="icon-sub-menu"></span>
+                    <ul class="menu-level1 js-open-menu">
+                        <li class="level2"><a href="home1.html" title="">Demo 1</a></li>
+                        <li class="level2"><a href="home2.html" title="">Demo 2</a></li>
+                        <li class="level2"><a href="home3.html" title="">Demo 3</a></li>
+                        <li class="level2"><a href="home4.html" title="">Demo 4</a></li>
+                        <li class="level2"><a href="home5.html" title="">Demo 5</a></li>
+                        <li class="level2"><a href="#" title="">Demo 6</a></li>
+                        
+                    </ul>
+                </li>
+                <li class="level1 active dropdown"><a href="#">Shop</a>
+                    <span class="icon-sub-menu"></span>
+                    <div class="menu-level1 js-open-menu">
+                        <ul class="level1">
+                            <li class="level2">
+                                <a href="#">Shop Layout</a>
+                                <ul class="menu-level-2">
+                                    <li class="level3"><a href="shop_full.html" title="">shop Full Width</a></li>
+                                    <li class="level3"><a href="shopgrid_v1.html" title="">Shop Grid v.1</a></li>
+                                    <li class="level3"><a href="shopgrid_v2.html" title="">Shop Grid v.2</a></li>
+                                    <li class="level3"><a href="shoplist.html" title="">Shop List</a></li>
+                                    <li class="level3"><a href="shopleft_sidebar.html" title="">Shop Left Sidebar</a></li>
+                                    <li class="level3"><a href="shopright_sidebar.html" title="">Shop Right Sidebar</a></li>
+                                </ul>
+                            </li>
+                            <li class="level2">
+                                <a href="#">Categories</a>
+                                <ul class="menu-level-2">
+                                    <li class="level3"><a href="cat_fullwidth.html" title="">Categories Full Width</a></li>
+                                    <li class="level3"><a href="cat_left_sidebar.html" title="">Categories Left Sidebar</a></li>
+                                    <li class="level3"><a href="cat_right_sidebar.html" title="">Categories Right Sidebar</a></li>
+                                </ul>
+                            </li>
+                            <li class="level2">
+                                <a href="#">Single Product Type</a>
+                                <ul class="menu-level-2">
+                                    <li class="level3"><a href="bundle.html" title="">Bundle</a></li>
+                                    <li class="level3"><a href="pin_product.html" title="">Pin Product</a></li>
+                                    <li class="level3"><a href="360degree.html" title="">360 Degree</a></li>
+                                    <li class="level3"><a href="feature_video.html" title="">Featued video</a></li>
+                                    <li class="level3"><a href="simple.html">Simple</a></li>
+                                    <li class="level3"><a href="variable.html">Variable</a></li>
+                                    <li class="level3"><a href="affilate.html">External / Affiliate</a></li>
+                                    <li class="level3"><a href="grouped.html">Grouped</a></li>
+                                    <li class="level3"><a href="outofstock.html">Out of stock</a></li>
+                                    <li class="level3"><a href="onsale.html">On sale</a></li>
+                                </ul>
+                            </li>
+                            <li class="level2">
+                                <a href="#">Single Product Layout</a>
+                                <ul class="menu-level-2">
+                                    <li class="level3"><a href="product_extended.html" title="">Product Extended</a></li>
+                                    <li class="level3"><a href="product_sidebar.html" title="">Product Left Sidebar</a></li>
+                                    <li class="level3"><a href="product_right_sidebar.html" title="">Product Right Sideba</a></li>
+                                </ul>
+                            </li>
+                            <li class="level2">
+                                <a href="#">Other Pages</a>
+                                <ul class="menu-level-2">
+                                    <li class="level3"><a href="shop_full.html" title="">Shop</a></li>
+                                    <li class="level3"><a href="cart.html" title="">Cart</a></li>
+                                    <li class="level3"><a href="wishlist.html" title="">My Wishlist</a></li>
+                                    <li class="level3"><a href="checkout.html" title="">Checkout</a></li>
+                                    <li class="level3"><a href="myaccount.html" title="">My Account</a></li>
+                                    <li class="level3"><a href="track.html" title="">Track Your Order</a></li>
+                                    <li class="level3"><a href="quickview.html" title="">Quick View</a></li>
 
-        <!-- Add your site or application content here -->
-
-        <!-- preloader area start -->
-        <div id="loading">
-            <div id="loading-center">
-                <div id="loading-center-absolute">
-                    <div id="object"></div>
-                </div>
-            </div>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                </li>
+                <li class="level1 active dropdown"><a href="#">Mega Menu</a></li>
+                <li class="level1">
+                    <a href="#">Pages</a>
+                    <span class="icon-sub-menu"></span>
+                    <ul class="menu-level1 js-open-menu">
+                         <li class="level2"><a href="aboutus.html" title="About Us ">About Us </a></li>
+                        <li class="level2"><a href="contactus.html" title="Contact">Contact</a></li>
+                        <li class="level2"><a href="faq.html" title="FAQs">FAQs</a></li>
+                        <li class="level2"><a href="404.html" title="404">404</a></li>
+                        <li class="level2"><a href="commingsoon.html" title="Coming Soon">Coming Soon</a></li>
+                    </ul>
+                </li>
+                <li class="level1">
+                    <a href="#">Blog</a>
+                    <span class="icon-sub-menu"></span>
+                    <ul class="menu-level1 js-open-menu">
+                        <li class="level2"><a href="blog-standar.html" title="Blog Standar">Blog Standar</a></li>
+                        <li class="level2"><a href="blog_grid.html" title="Blog Gird">Blog Gird</a></li>
+                        <li class="level2"><a href="blog-standar.html" title="Blog Sidebar">Blog Sidebar</a></li>
+                        <li class="level2"><a href="blog-single-post.html" title="Blog Single Post">Blog Single Post</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
-        <!-- preloader area end -->
-
-        <!-- back to top start -->
-        <div class="progress-wrap">
-            <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-            </svg>
-        </div>
-        <!-- back to top end -->
-
-        <!-- header area start -->
-        <header>
-            <div class="header__area">
-                <div class="header__top header__padding d-none d-sm-block">
-                    <div class="container-fluid">
-                        <div class="row align-items-center">
-                            <div class="col-xl-6 col-lg-6 col-md-5 d-none d-md-block">
-                                <div class="header__welcome">
-                                    <span>Welcome to Worldwide Electronics Store</span>
+    </div>
+    <!-- end push menu-->
+    <div class="wrappage">
+        <header id="header" class="header-v5">
+           <div class="header-top-banner">
+               <a href="#"><img src="img/banner-top.jpg" alt="" class="img-reponsive"></a>
+           </div>
+           <div class="topbar">
+               <div class="container container-240">
+                   <div class="row flex">
+                       <div class="col-md-6 col-sm-6 col-xs-4 flex-left">
+                           <div class="topbar-left">
+                               <div class="element element-store hidden-xs hidden-sm">
+                                    <a id="label1" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <img src="img/icon-map.png" alt="">
+                                      <span>Store Location</span>
+                                      
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="label1">
+                                        <li><a href="#">New York</a></li>
+                                        <li><a href="#">California</a></li>
+                                        <li><a href="#">Los Angeles</a></li>
+                                    </ul>
+                                </div>
+                                <div class="element hidden-xs hidden-sm">
+                                    <a href="#"><img src="img/icon-track.png" alt=""><span>Track Your Order</span></a>
+                                </div>
+                                <div class="element element-account hidden-md hidden-lg">
+                                    <a href="#">My Account</a>
                                 </div>
                             </div>
-                            <div class="col-xl-6 col-lg-6 col-md-7">
-                                <div class="header__action d-flex justify-content-center justify-content-md-end">
-                                    <ul>
-                                        <li><a href="#">My Account</a></li>
-                                        <li><a href="#">My Wishlist</a></li>
-                                        <li><a href="login.html">Sign In</a></li>
-                                        <li><a href="#">Compare</a></li>
+                       </div>
+                       <div class="col-md-6 col-sm-6 col-xs-8 flex-right">
+                            <div class="topbar-right">
+                               <div class="element hidden-xs hidden-sm">
+                                    <a href="#">Buyer Protection </a>
+                                </div>
+                                <div class="element hidden-xs hidden-sm">
+                                    <a href="#">Help</a>
+                                </div>
+                                <div class="element hidden-xs hidden-sm">
+                                    <a href="#"><img src="img/icon-phone.png" alt=""><span>Save big on our app!</span></a>
+                                </div>
+                                <div class="element element-leaguage">
+                                    <a id="label2" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <img src="img/icon-l.png" alt="">
+                                      <span>English</span>
+                                      <span class="ion-ios-arrow-down f-10 e-arrow"></span>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="label2">
+                                        <li><a href="#">EN</a></li>
+                                        <li><a href="#">DE</a></li>
+                                        <li><a href="#">FR</a></li>
+                                    </ul>
+                                </div>
+                                <div class="element element-currency">
+                                    <a id="label3" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    
+                                      <span>USD</span>
+                                      <span class="ion-ios-arrow-down f-10 e-arrow"></span>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="label3">
+                                        <li><a href="#">USD</a></li>
+                                        <li><a href="#">AUD</a></li>
+                                        <li><a href="#">EUR</a></li>
                                     </ul>
                                 </div>
                             </div>
+                       </div>
+                        
+                   </div>
+               </div>
+           </div>
+           <div class="header-center">
+                <div class="container container-240">
+                   <div class="row flex">
+                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 v-center header-logo">
+                           
+                               <a href="#"><img src="img/logo.png" alt="" class="img-reponsive"></a>
+                           
                         </div>
-                    </div>
-                </div>
-                <div class="header__info header__padding">
-                    <div class="container-fluid">
-                        <div class="row align-items-center">
-                            <div class="col-xl-3 col-lg-3">
-                                <div class="header__info-left d-flex justify-content-center justify-content-sm-between align-items-center">
-                                    <div class="logo">
-                                        <a href="index.html"><img src="assets/img/logo/logo-black.png" alt="logo"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-9 col-lg-9">
-                                <div class="header__info-right">
-                                    <div class="header__search f-left d-none d-sm-block">
-                                        <form action="#">
-                                            <div class="header__search-box">
-                                                <input type="text" placeholder="Search For Products...">
-                                                <button type="submit">Search</button>
+                      <div class="col-lg-7 col-md-7 v-center header-search hidden-xs hidden-sm">
+                            <form method="get" class="searchform ajax-search" action="/search" role="search">
+                                <input type="hidden" name="type" value="product">
+                                <input type="text" onblur="if (this.value=='') this.value = this.defaultValue" onfocus="if (this.value==this.defaultValue) this.value = ''" name="q" class="form-control" placeholder="i’m shoping for...">
+                                <ul class="list-product-search hidden-xs hidden-sm">
+                                    <li>
+                                        <a class="flex align-center" href="">
+                                            <div class="product-img">
+                                                <img src="img/product/iphonex.jpg" alt="">
                                             </div>
-                                            <div class="header__search-cat">
-                                                <select>
-                                                    <option>All Categories</option>
-                                                    <option>Best Seller Products</option>
-                                                    <option>Top 10 Offers</option>
-                                                    <option>New Arrivals</option>
-                                                    <option>Phones & Tablets</option>
-                                                    <option>Electronics & Digital</option>
-                                                    <option>Fashion & Clothings</option>
-                                                    <option>Jewelry & Watches</option>
-                                                    <option>Health & Beauty</option>
-                                                    <option>Sound & Speakers</option>
-                                                    <option>TV & Audio</option>
-                                                    <option>Computers</option>
-                                                </select>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <div class="cart__mini-wrapper d-none d-md-flex f-right p-relative">
-                                        <a href="javascript:void(0);" class="cart__toggle">
-                                            <span class="cart__total-item">01</span>
+                                            <h3 class="product-title">Notebook Black Spire Smartphone Black 2.0</h3>
                                         </a>
-                                        <span class="cart__content">
-                                            <span class="cart__my">My Cart:</span>
-                                            <span class="cart__total-price">$ 255.00</span>
-                                        </span>
-                                        <div class="cart__mini">
-                                          <div class="cart__close"><button type="button" class="cart__close-btn"><i class="fal fa-times"></i></button></div>
-                                          <ul>
-                                              <li>
-                                                <div class="cart__title">
-                                                  <h4>My Cart</h4>
-                                                  <span>(1 Item in Cart)</span>
-                                                </div>
-                                              </li>
-                                              <li>
-                                                <div class="cart__item d-flex justify-content-between align-items-center">
-                                                  <div class="cart__inner d-flex">
-                                                    <div class="cart__thumb">
-                                                      <a href="product-details.html">
-                                                        <img src="assets/img/shop/product/cart/cart-mini-1.jpg" alt="">
-                                                      </a>
-                                                    </div>
-                                                    <div class="cart__details">
-                                                      <h6><a href="product-details.html"> Samsung C49J89: £875, Debenhams Plus  </a></h6>
-                                                      <div class="cart__price">
-                                                        <span>$255.00</span>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                  <div class="cart__del">
-                                                      <a href="#"><i class="fal fa-trash-alt"></i></a>
-                                                  </div>
-                                                </div>
-                                              </li>
-                                              <li>
-                                                <div class="cart__sub d-flex justify-content-between align-items-center">
-                                                  <h6>Car Subtotal</h6>
-                                                  <span class="cart__sub-total">$255.00</span>
-                                                </div>
-                                              </li>
-                                              <li>
-                                                <a href="checkout.html" class="t-y-btn w-100 mb-10">Proceed to checkout</a>
-                                                <a href="cart.html" class="t-y-btn t-y-btn-border w-100 mb-10">view add edit cart</a>
-                                              </li>
-                                          </ul>
-                                        </div>
-                                    </div>
+                                    </li>
+                                    <li>
+                                        <a class="flex align-center" href="">
+                                            <div class="product-img">
+                                                <img src="img/product/sound.jpg" alt="">
+                                            </div>
+                                            <h3 class="product-title">Smartphone 6S 64GB LTE</h3>
+                                        </a>
+                                    <li>
+                                        <a class="flex align-center" href="">
+                                            <div class="product-img">
+                                                <img src="img/product/phone4.jpg" alt="">
+                                            </div>
+                                            <h3 class="product-title">Notebook Black Spire Smartphone Black 2.0</h3>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="flex align-center" href="">
+                                            <div class="product-img">
+                                                <img src="img/product/phone5.jpg" alt="">
+                                            </div>
+                                            <h3 class="product-title">Smartphone 6S 64GB LTE </h3>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="flex align-center" href="">
+                                            <div class="product-img">
+                                                <img src="img/product/phone1.jpg" alt="">
+                                            </div>
+                                            <h3 class="product-title">Notebook Black Spire Smartphone Black 2.0</h3>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="search-panel">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href='#'>All categories <span class="fa fa-caret-down"></span></a>
+                                    <ul id="category" class="dropdown-menu dropdown-category">
+                                        <li><a href="#">TV & Video</a></li>
+                                        <li><a href="#">Home Audio & Theater</a></li>
+                                        <li><a href="#">Camera, Photo & Video</a></li>
+                                        <li><a href="#">Cell Phones & Accessories</a></li>
+                                        <li><a href="#">Headphones</a></li>
+                                        <li><a href="#">Car Electronics</a></li>
+                                        <li><a href="#">Electronics Showcase</a></li>
+                                    </ul>
                                 </div>
+                                <span class="input-group-btn">
+                                          <button class="button_search" type="button"><i class="ion-ios-search-strong"></i></button>
+                                </span>
+                            </form>
+                            <div class="tags">
+                                <span>Most searched :</span>
+                                <a href="#">umbrella</a>
+                                <a href="#">hair accessories </a>
+                                <a href="#">diamond</a>
+                                <a href="#"> painting slime</a>
+                                <a href="#">sunglasses</a>
                             </div>
                         </div>
+                       <div class="col-lg-3  col-md-3 col-sm-6 col-xs-6 v-center header-sub">
+                            <div class="right-panel">
+                               <div class="header-sub-element hidden-xs hidden-sm">
+                                   <div class="sub-left">
+                                       <img src="img/icon-call.png" alt="">
+                                   </div>
+                                   <div class="sub-right">
+                                       <span>Call Us Free</span>
+                                        <div class="phone">(+123) 456 789 </div>
+                                   </div>
+                               </div>
+                               <div class="header-sub-element row">
+                                   <a class="hidden-xs hidden-sm" href=""><img src="img/icon-user.png" alt=""></a>
+                                   <a href="#"><img src="img/icon-heart.png" alt=""></a>
+                                   <div class="cart">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="label5">
+                                            <img src="img/icon-cart.png" alt="">
+                                            <span class="count cart-count">0</span>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-cart">
+                                            <ul class="mini-products-list">
+                                                <li class="item-cart">
+                                                    <div class="product-img-wrap">
+                                                        <a href="#"><img src="img/cart1.jpg" alt="" class="img-reponsive"></a>
+                                                    </div>
+                                                    <div class="product-details">
+                                                        <div class="inner-left">
+                                                            <div class="product-name"><a href="#">Harman Kardon Onyx Studio </a></div>
+                                                            <div class="product-price">
+                                                                $ 60.00 <span>( x2)</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="e-del"><i class="ion-ios-close-empty"></i></a>
+                                                </li>
+                                                <li class="item-cart">
+                                                    <div class="product-img-wrap">
+                                                        <a href="#"><img src="img/cart1.jpg" alt="" class="img-reponsive"></a>
+                                                    </div>
+                                                    <div class="product-details">
+                                                        <div class="inner-left">
+                                                            <div class="product-name"><a href="#">Harman Kardon Onyx Studio </a></div>
+                                                            <div class="product-price">
+                                                                $ 60.00 <span>( x2)</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                     <a href="#" class="e-del"><i class="ion-ios-close-empty"></i></a>
+                                                </li>
+                                            </ul>
+                                            <div class="bottom-cart">
+                                                <div class="cart-price">
+                                                    <span>Subtotal</span>
+                                                    <span class="price-total">$ 120.00</span>
+                                                </div>
+                                                <div class="button-cart">
+                                                    <a href="#" class="cart-btn btn-viewcart">View Cart</a>
+                                                    <a href="#" class="cart-btn e-checkout btn-gradient">Checkout</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                   </div>
+                                    <a href="#" class="hidden-md hidden-lg icon-pushmenu js-push-menu">
+                                        <i class="fa fa-bars f-15"></i>
+                                    </a>
+                               </div>
+                            </div>
+                       </div>
                     </div>
                 </div>
-                <div class="header__bottom header__padding header__bottom-border">
-                    <div class="container-fluid">
-                        <div class="row align-items-center">
-                            <div class="col-xl-9 col-lg-9 col-md-12 col-sm-6 col-6">
-                              <div class="header__bottom-left d-flex d-xl-block align-items-center">
-                                <div class="side-menu d-xl-none mr-20">
-                                  <button type="button" class="side-menu-btn offcanvas-toggle-btn"><i class="fas fa-bars"></i></button>
+           </div>
+           <div class="header-bottom hidden-xs hidden-sm">
+               <div class="container container-240">
+                       <div class="row flex lr2">
+                            <div class="col-lg-3 widget-verticalmenu">
+                                <div class="navbar-vertical">
+                                    <button class="navbar-toggles navbar-drop js-vertical-menu"><span>All Departments</span></button>
                                 </div>
-                                <div class="main-menu d-none d-md-block">
-                                    <nav id="mobile-menu-2">
-                                        <ul>
-                                            <li>
-                                                <a href="index.html">Home</a>
-                                            </li>
-                                            <li><a href="product.html">Features <i class="far fa-angle-down"></i></a>
-                                                <ul class="submenu">
-                                                    <li><a href="product.html">Product Type</a></li>
-                                                    <li><a href="product.html">Product Features <i class="far fa-angle-down"></i></a>
-                                                        <ul class="submenu">
-                                                            <li><a href="product-details.html">Simple Product</a></li>
-                                                            <li><a href="product-details-config.html">Configurable Product</a></li>
-                                                            <li><a href="product-details-group.html">Group Product</a></li>
-                                                            <li><a href="product-details-download.html">Downloadable Product</a></li>
+                                <div class="vertical-wrapper">
+                                    <ul class="vertical-group">
+                                        <li class="vertical-item level1 mega-parent"><a href="#">New Arrivals</a></li>
+                                        <li class="vertical-item level1 mega-parent"><a href="#">Top 100 Best Seller <span class="h-ribbon e-red mg-l10">Hot</span></a></li>
+                                        <li class="vertical-item level1 vertical-drop"><a href="#">TV & Video</a>
+                                            <div class="menu-level-1 dropdown-menu vertical-menu v2 tvbg pd2 style1">
+                                                <ul class="level1">
+                                                    <li class="level2 col-md-5">
+                                                            <a href="#">TVs by Type</a>
+                                                            <ul class="menu-level-2">
+                                                                <li class="level3"><a href="#" title="">4K Ultra HD</a></li>
+                                                                <li class="level3"><a href="#" title="">Smart TVs</a></li>
+                                                                <li class="level3"><a href="#" title="">LED & LCD TVs & amplifiers</a></li>
+                                                                <li class="level3"><a href="#" title="">OLED TVs</a></li>
+                                                                <li class="level3"><a href="#" title="">QLED/Quantum Dot TVs  </a></li>
+                                                            </ul>
+
+                                                            <a href="#">Blu-ray & DVD Players</a>
+                                                            <ul class="menu-level-2">
+                                                                <li class="level3"><a href="#" title="">4K Blu-ray Players</a></li>
+                                                                <li class="level3"><a href="#" title="">Streaming Blu-ray Players</a></li>
+                                                                <li class="level3"><a href="#" title="">3D Blu-ray Players</a></li>
+                                                                <li class="level3"><a href="#" title="">Portable Blu-ray Players</a></li>
+                                                                <li class="level3"><a href="#" title="">DVD Recorders</a></li>
+                                                            </ul>
+                                                    </li>
+                                                    <li class="level2 col-md-7">
+                                                        <a href="# ">Home Audio</a>
+                                                        <ul class="menu-level-2">
+                                                            <li class="level3"><a href="#" title="">Home Theater Systems</a></li>
+                                                            <li class="level3"><a href="#" title="">Soundbars</a></li>
+
+                                                            <li class="level3"><a href="#" title="">Speakers</a></li>
+                                                            <li class="level3"><a href="#" title="">Receivers & Amplifiers</a></li>
+                                                            <li class="level3"><a href="#" title="">Premium Audio</a></li>
                                                         </ul>
                                                     </li>
-                                                    <li><a href="product.html">Shop By Brand</a></li>
+                                                    
                                                 </ul>
-                                            </li>
-                                            <li>
-                                                <a href="blog.html">Blog <i class="far fa-angle-down"></i></a>
-                                                <ul class="submenu">
-                                                    <li><a href="blog.html">Blog</a></li>
-                                                    <li><a href="blog-detaills.html">Blog Details</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="about.html">about us</a></li>
-                                            <li><a href="contact.html">contact</a></li>
-                                            <li><a href="register.html">Register</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xl-3 col-lg-3  col-sm-6  col-6 d-md-none d-lg-block">
-                                <div class="header__bottom-right d-flex justify-content-end">
-                                    <!-- <div class="header__currency">
-                                        <select>
-                                            <option>USD</option>
-                                            <option>USD</option>
-                                            <option>USD</option>
-                                            <option>USD</option>
-                                            <option>USD</option>
-                                        </select>
-                                    </div> -->
-                                    <!-- <div class="header__lang d-md-none d-lg-block">
-                                        <select>
-                                            <option>English</option>
-                                            <option>Bangla</option>
-                                            <option>Arabic</option>
-                                            <option>Hindi</option>
-                                            <option>Urdu</option>
-                                        </select>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- header area end -->
-
-        <!-- offcanvas area start -->
-        <div class="offcanvas__area">
-            <div class="offcanvas__wrapper">
-            <div class="offcanvas__close">
-                <button class="offcanvas__close-btn" id="offcanvas__close-btn">
-                    <i class="fal fa-times"></i>
-                </button>
-            </div>
-            <div class="offcanvas__content">
-                <div class="offcanvas__logo mb-40">
-                    <a href="index.html">
-                    <img src="assets/img/logo/logo-black.png" alt="logo">
-                    </a>
-                </div>
-                <div class="offcanvas__search mb-25">
-                    <form action="#">
-                        <input type="text" placeholder="What are you searching for?">
-                        <button type="submit" ><i class="far fa-search"></i></button>
-                    </form>
-                </div>
-                <div class="mobile-menu-2 fix"></div>
-                <div class="offcanvas__action">
-
-                </div>
-            </div>
-            </div>
-        </div>
-        <!-- offcanvas area end -->      
-        <div class="body-overlay"></div>
-        <!-- offcanvas area end -->
-
-        <main>
-            
-            <!-- breadcrumb area start -->
-            <section class="breadcrumb__area box-plr-75">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-xxl-12">
-                            <div class="breadcrumb__wrapper">
-                                <nav aria-label="breadcrumb">
-                                    <ol class="breadcrumb">
-                                      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                      <li class="breadcrumb-item active" aria-current="page">Register</li>
-                                    </ol>
-                                  </nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- breadcrumb area end -->
-
-            <!-- login Area Strat-->
-            <section class="login-area pb-100">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 offset-lg-2">
-                            <div class="basic-login">
-                                <h3 class="text-center mb-60">Signup From Here</h3>
-                                <form action="#">
-                                    <label for="fname">Firstname <span>*</span></label>
-                                    <input id="fname" type="text" name="fname"/>
-                                    <label for="lname">Lastname <span>*</span></label>
-                                    <input id="lname" type="text" name="lname"/>
-                                    <label for="email-id">Email Address <span>*</span></label>
-                                    <input id="email-id" type="email"  name="email"/>
-                                    <label for="phone">Phone Number <span>*</span></label>
-                                    <input id="text" type="text"  name="number"/>
-                                    <label for="pass">Password <span>*</span></label>
-                                    <input id="pass" type="password" name="password"/>
-                                    <div class="mt-10"></div>
-                                    <button class="t-y-btn w-100">Register Now</button>
-                                    <div class="or-divide"><span>or</span></div>
-                                    <a href="login.html" class="t-y-btn t-y-btn-grey w-100">login Now</a>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- login Area End-->
- 
-        </main>
-
-              <!-- footer area start -->
-              <footer>
-                <div class="footer__area footer-bg">
-                    <div class="footer__top pt-80 pb-40">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xl-7 col-lg-12">
-                                    <div class="footer__top-left">
-                                        <div class="row">
-                                            <div class="col-xl-5 col-lg-6 col-md-6 col-sm-6">
-                                                <div class="footer__widget">
-                                                    <div class="footer__widget-title mb-45">
-                                                        <div class="footer__logo">
-                                                            <a href="index.html"><img src="assets/img/logo/logo-white.png" alt=""></a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="footer__widget-content">
-                                                        <div class="footer__hotline d-flex align-items-center mb-30">
-                                                            <div class="icon mr-15">
-                                                                <i class="fal fa-headset"></i>
-                                                            </div>
-                                                            <div class="text">
-                                                                <h4>Hotline Free 24/24:</h4>
-                                                                <span><a href="tel:100-123-456-7890">(+100) 123 456 7890</a></span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="footer__info">
-                                                            <ul>
-                                                                <li>
-                                                                    <span>Add:  <a target="_blank" href="https://www.google.com/maps/place/Dhaka/@23.7806207,90.3492859,12z/data=!3m1!4b1!4m5!3m4!1s0x3755b8b087026b81:0x8fa563bbdd5904c2!8m2!3d23.8104753!4d90.4119873">Walls Street 68, Mahattan, New York, USA</a></span></li>
-                                                                <li><span>Email: <a href="mailto:info@thebuesky.com">info@thebuesky.com</a>  </span></li>
-                                                                <li><span>Fax: <a href="tel:123-456-7890">(+100) 123 456 7890</a> - <a href="tel:-100-123-456-7891">(+100) 123 456 7891</a> </span></li>
+                                            </div>
+                                        </li>
+                                        <li class="vertical-item level1 vertical-drop"><a href="#">Home Audi & Theater</a>
+                                            <div class="menu-level-1 dropdown-menu vertical-menu v2 homebg pd2 style1">
+                                                <ul class="level1">
+                                                    <li class="level2 col-md-4">
+                                                            <a href="#">Home theater</a>
+                                                            <ul class="menu-level-2">
+                                                                <li class="level3"><a href="#" title="">Sound bars</a></li>
+                                                                <li class="level3"><a href="#" title="">Speakers</a></li>
+                                                                <li class="level3"><a href="#" title="">Receivers & amplifiers</a></li>
+                                                                <li class="level3"><a href="#" title="">Equalizers</a></li>
+                                                                <li class="level3"><a href="#" title="">Phono preamps  </a></li>
                                                             </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                    </li>
+                                                    <li class="level2 col-md-4">
+                                                        <a href="# ">Speakers</a>
+                                                        <ul class="menu-level-2">
+                                                            <li class="level3"><a href="#" title="">Bluetooth speakers</a></li>
+                                                            <li class="level3"><a href="#" title="">Ceiling & in-wall speakers</a></li>
+
+                                                            <li class="level3"><a href="#" title="">Digital music systems</a></li>
+                                                            <li class="level3"><a href="#" title="">Outdoor</a></li>
+                                                            <li class="level3"><a href="#" title="">Satellite speakers</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="level2 col-md-4">
+                                                        <a href="#">Accessories</a>
+                                                        <ul class="menu-level-2">
+                                                            <li class="level3"><a href="#" title="">Receivers & amplifiers</a></li>
+                                                            <li class="level3"><a href="#" title="">Cd & tape players</a></li>
+                                                            <li class="level3"><a href="#" title="">Tuners</a></li>
+                                                            <li class="level3"><a href="#" title="">Curntables</a></li>
+                                                            <li class="level3"><a href="#" title="">Receivers & adapters</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
                                             </div>
-                                            <div class="col-xl-7 col-lg-6 col-md-6 col-sm-6">
+                                        </li>
+                                        <li class="vertical-item level1 vertical-drop"><a href="#">Camera, Photo & Video</a>
+                                            <div class="menu-level-1 dropdown-menu vertical-menu">
+                                                <ul class="vertical-menu1">
+                                                    <li><a href="#">Car Audio</a></li>
+                                                    <li><a href="#">Radar Detectors</a></li>
+                                                    <li><a href="#">Car Safety & Security</a></li>
+                                                    <li><a href="#">Car Video</a></li>
+                                                    <li><a href="#">Two-Way Radios</a></li>
+                                                    <li><a href="#">CB Radios & Scanners</a></li>
+                                                    <li><a href="#">In-Dash Mounting Kits</a></li>
+                                                    <li><a href="#">Installation Accessories.</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="vertical-item level1 vertical-drop"><a href="#">Cell Phones & Accessories</a>
+                                         <div class="menu-level-1 dropdown-menu vertical-menu v2 phonebg pd2 style1">
+                                                <ul class="level1">
+                                                    <li class="level2 col-md-4">
+                                                            <a href="#">Cell Phones</a>
+                                                            <ul class="menu-level-2">
+                                                                <li class="level3"><a href="#" title="">Samsung Galaxy S8</a></li>
+                                                                <li class="level3"><a href="#" title="">iPhone 7/7 Plus</a></li>
+                                                                <li class="level3"><a href="#" title="">iPhone 6</a></li>
+                                                                <li class="level3"><a href="#" title="">Samsung Galaxy S7</a></li>
+                                                                <li class="level3"><a href="#" title="">Unlocked Phones</a></li>
+                                                            </ul>
+
+                                                            <a href="#">Cases</a>
+                                                            <ul class="menu-level-2">
+                                                                <li class="level3"><a href="#" title="">4Armbands</a></li>
+                                                                <li class="level3"><a href="#" title="">Armbands</a></li>
+                                                                <li class="level3"><a href="#" title="">Cases</a></li>
+                                                                <li class="level3"><a href="#" title="">Flip Cases</a></li>
+                                                                <li class="level3"><a href="#" title="">Holsters & Clips</a></li>
+                                                            </ul>
+                                                    </li>
+                                                    <li class="level2 col-md-8">
+                                                        <a href="# ">Accessories</a>
+                                                        <ul class="menu-level-2">
+                                                            <li class="level3"><a href="#" title="">Batteries</a></li>
+                                                            <li class="level3"><a href="#" title="">Bluetooth Headsets</a></li>
+
+                                                            <li class="level3"><a href="#" title="">Bluetooth Speakers</a></li>
+                                                            <li class="level3"><a href="#" title="">Car Accessories</a></li>
+                                                            <li class="level3"><a href="#" title="">Chargers</a></li>
+                                                        </ul>
+
+                                                        <a href="# ">Connected Devices</a>
+                                                        <ul class="menu-level-2">
+                                                            <li class="level3"><a href="#" title="">Tablets</a></li>
+                                                            <li class="level3"><a href="#" title="">Mobile Hotspots</a></li>
+
+                                                            <li class="level3"><a href="#" title="">Smart Watches</a></li>
+                                                            <li class="level3"><a href="#" title="">Wearable Technology</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="vertical-item level1 vertical-drop"><a href="#">Headphones</a>
+                                        <div class="menu-level-1 dropdown-menu vertical-menu v2 headphonebg pd3 style1">
+                                                <ul class="level1">
+
+                                                    <li class="level2 col-md-6">
+                                                            <a href="#">Headphones</a>
+                                                            <ul class="menu-level-2">
+                                                                <li class="level3"><a href="#" title="">In-Ear & Earbud</a></li>
+                                                                <li class="level3"><a href="#" title="">On-Ear</a></li>
+                                                                <li class="level3"><a href="#" title="">Over-Ear</a></li>
+                                                                <li class="level3"><a href="#" title="">Wireless</a></li>
+                                                                <li class="level3"><a href="#" title="">Sports & Fitness</a></li>
+                                                            </ul>
+
+                                                            
+                                                    </li>
+                                                    <li class="level2 col-md-6">
+                                                        <a href="# ">Speaker System</a>
+                                                        <ul class="menu-level-2">
+                                                            <li class="level3"><a href="#" title="">Complete Systems</a></li>
+                                                            <li class="level3"><a href="#" title="">Sound Bars</a></li>
+
+                                                            <li class="level3"><a href="#" title="">Surround Sound</a></li>
+                                                            <li class="level3"><a href="#" title="">Receivers & Amplifiers</a></li>
+                                                            <li class="level3"><a href="#" title="">Equalizers</a></li>
+                                                        </ul>
+
+                                                        
+                                                    </li>
+                                                    
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="vertical-item level1 vertical-drop"><a href="#">Car Electronics</a>
+                                            <div class="menu-level-1 dropdown-menu vertical-menu">
+                                                <ul class="vertical-menu1">
+                                                    <li><a href="#">Car Audio</a></li>
+                                                    <li><a href="#">Radar Detectors</a></li>
+                                                    <li><a href="#">Car Safety & Security</a></li>
+                                                    <li><a href="#">Car Video</a></li>
+                                                    <li><a href="#">Two-Way Radios</a></li>
+                                                    <li><a href="#">CB Radios & Scanners</a></li>
+                                                    <li><a href="#">In-Dash Mounting Kits</a></li>
+                                                    <li><a href="#">Installation Accessories.</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="vertical-item level1 vertical-drop"><a href="#">Electronics Showcase</a>
+                                            <div class="menu-level-1 dropdown-menu vertical-menu">
+                                                <ul class="vertical-menu1">
+                                                    <li><a href="#">Car Audio</a></li>
+                                                    <li><a href="#">Radar Detectors</a></li>
+                                                    <li><a href="#">Car Safety & Security</a></li>
+                                                    <li><a href="#">Car Video</a></li>
+                                                    <li><a href="#">Two-Way Radios</a></li>
+                                                    <li><a href="#">CB Radios & Scanners</a></li>
+                                                    <li><a href="#">In-Dash Mounting Kits</a></li>
+                                                    <li><a href="#">Installation Accessories.</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="vertical-item level1 vertical-drop mega-parent"><a href="#">All categlories</a>
+                                            <div class="menu-level-1 dropdown-menu vertical-menu v2 pd">
                                                 <div class="row">
-                                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                                                        <div class="footer__widget">
-                                                            <div class="footer__widget-title">
-                                                                <h4>Information</h4>
-                                                            </div>
-                                                            <div class="footer__widget-content">
-                                                                <div class="footer__link">
-                                                                    <ul>
-                                                                        <li><a href="#"> Custom Service </a></li>
-                                                                        <li><a href="#">F.A.Q.’s</a></li>
-                                                                        <li><a href="#">Ordering Tracking</a></li>
-                                                                        <li><a href="#"> Contacts</a></li>
-                                                                        <li><a href="#">Events</a></li>
-                                                                        <li><a href="#">Popular</a></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                                    <div class="col-md-4 text-center cate-item">
+                                                        <a href="#"><img src="img/megamenu/cate1.jpg" alt="" class="img-reponsive"></a>
+                                                        <h3><a href="#">Mirrorless Cameras</a></h3>
                                                     </div>
-                                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                                                        <div class="footer__widget">
-                                                            <div class="footer__widget-title">
-                                                                <h4>Our Services</h4>
-                                                            </div>
-                                                            <div class="footer__widget-content">
-                                                                <div class="footer__link">
-                                                                    <ul>
-                                                                        <li><a href="#">Sitemap</a></li>
-                                                                        <li><a href="#">Privacy Policy</a></li>
-                                                                        <li><a href="#">Your Account</a></li>
-                                                                        <li><a href="#">Advanced Search</a></li>
-                                                                        <li><a href="#">Terms & Condition</a></li>
-                                                                        <li><a href="#"> Contact Us</a></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                                    <div class="col-md-4 text-center cate-item">
+                                                        <a href="#"><img src="img/megamenu/cate2.jpg" alt="" class="img-reponsive"></a>
+                                                        <h3><a href="#">Lenses</a></h3>
+                                                    </div>
+                                                    <div class="col-md-4 text-center cate-item">
+                                                        <a href="#"><img src="img/megamenu/cate3.jpg" alt="" class="img-reponsive"></a>
+                                                        <h3><a href="#">Photography Drones</a></h3>
+                                                    </div>
+                                                    <div class="col-md-4 text-center cate-item">
+                                                        <a href="#"><img src="img/megamenu/cate4.jpg" alt="" class="img-reponsive"></a>
+                                                        <h3><a href="#">Sports & Action Cameras</a></h3>
+                                                    </div>
+                                                    <div class="col-md-4 text-center cate-item">
+                                                        <a href="#"><img src="img/megamenu/cate5.jpg" alt="" class="img-reponsive"></a>
+                                                        <h3><a href="#">Optics</a></h3>
+                                                    </div>
+                                                    <div class="col-md-4 text-center cate-item">
+                                                        <a href="#"><img src="img/megamenu/cate6.jpg" alt="" class="img-reponsive"></a>
+                                                        <h3><a href="#">Accessories</a></h3>
                                                     </div>
                                                 </div>
                                             </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-9 widget-left">
+                                <div class="flex lr e-border">
+                                    <nav class="main-menu flex align-center">
+                                        <button type="button" class="icon-mobile e-icon-menu icon-pushmenu js-push-menu">
+                                            <span class="navbar-toggler-bar"></span>
+                                            <span class="navbar-toggler-bar"></span>
+                                            <span class="navbar-toggler-bar"></span>
+                                        </button>
+                                       <div class="collapse navbar-collapse" id="myNavbar">
+                                            <ul class="nav navbar-nav js-menubar">
+                                                <li class="level1 active hassub"><a href="#">Home</a>
+                                                    <span class="plus js-plus-icon"></span>
+                                                    <div class="menu-level-1 ver2 dropdown-menu">
+                                                       <div class="row">
+                                                           <div class="cate-item col-md-4 col-sm-12">
+                                                                <div class="demo-img">
+                                                                    <a href="home1.html">
+                                                                        <img src="img/demo/demo1.jpg" alt="" class="img-reponsive">
+
+                                                                    </a>
+                                                                </div>
+                                                               <div class="demo-text">Demo 1</div>
+                                                            </div> 
+                                                           <div class="cate-item col-md-4 col-sm-12">
+                                                                <div class="demo-img">
+                                                                    <a href="home2.html"><img src="img/demo/demo2.jpg" alt="" class="img-reponsive"></a>
+                                                                </div>
+                                                               <div class="demo-text">Demo 2</div>
+                                                           </div> 
+                                                           <div class="cate-item col-md-4 col-sm-12">
+                                                                <div class="demo-img">
+                                                                    <a href="home3.html"><img src="img/demo/demo3.jpg" alt="" class="img-reponsive"></a>
+                                                                </div>
+                                                               <div class="demo-text">Demo 3</div>
+                                                           </div> 
+                                                           <div class="cate-item col-md-4 col-sm-12">
+                                                                <div class="demo-img">
+                                                                    <a href="home4.html"><img src="img/demo/demo4.jpg" alt="" class="img-reponsive"></a>
+                                                                </div>
+                                                               <div class="demo-text">Demo 4</div>
+                                                           </div> 
+                                                           <div class="cate-item col-md-4 col-sm-12">
+                                                                <div class="demo-img">
+                                                                    <a href="home5.html"><img src="img/demo/demo5.jpg" alt="" class="img-reponsive"></a>
+                                                                </div>
+                                                               <div class="demo-text">Demo 5</div>
+                                                           </div> 
+                                                           <div class="cate-item col-md-4 col-sm-12">
+                                                                <div class="demo-img">
+                                                                    <a href="#"><img src="img/demo/demo6.jpg" alt="" class="img-reponsive"></a>
+                                                                    <div class="overlay-img box-center">
+                                                                        <a href="#" class="btn-gradient btn-csoon">Coming soon</a>
+                                                                    </div>
+                                                                </div>
+                                                               <div class="demo-text">Demo 6</div>
+                                                           </div> 
+                                                       </div>
+                                                    </div>
+                                                </li>
+                                                <li class="level1 dropdown hassub"><a href="#">Shop<span class="h-ribbon h-pos e-green">sale</span></a>
+
+                                                    <span class="plus js-plus-icon"></span>
+                                                    <div class="menu-level-1 dropdown-menu">
+                                                        <ul class="level1">
+                                                            <li class="level2 col-4">
+                                                                    <a href="#">Shop Layout</a>
+                                                                    <ul class="menu-level-2">
+                                                                        <li class="level3"><a href="shop_full.html" title="">Shop Full Width</a></li>
+                                                                        <li class="level3"><a href="shopgrid_v1.html" title="">Shop Grid v.1</a></li>
+                                                                        <li class="level3"><a href="shopgrid_v2.html" title="">Shop Grid v.2</a><span class="h-ribbon v3 e-red h-pos">Hot</span></li>
+                                                                        <li class="level3"><a href="shoplist.html" title="">Shop List</a></li>
+                                                                        <li class="level3"><a href="shopleft_sidebar.html" title="">Shop Left Sidebar</a></li>
+                                                                        <li class="level3"><a href="shopright_sidebar.html" title="">Shop Right Sidebar</a></li>
+                                                                    </ul>
+                                                                
+                                                                    <a href="#">Categories</a>
+                                                                    <ul class="menu-level-2">
+                                                                        <li class="level3"><a href="cat_fullwidth.html" title="">Categories Full Width</a><span class="h-ribbon v3 e-red h-pos">Hot</span></li>
+                                                                        <li class="level3"><a href="cat_left_sidebar.html" title="">Categories Left Sidebar</a></li>
+                                                                        <li class="level3"><a href="cat_right_sidebar.html" title="">Categories Right Sidebar</a></li>
+                                                                        
+                                                                    </ul>
+                                                                
+
+                                                            </li>
+                                                            <li class="level2 col-4">
+                                                                <a href="# ">Single Product Type</a>
+                                                                <ul class="menu-level-2">
+                                                                    <li class="level3"><a href="bundle.html" title="">Bundle</a><span class="h-ribbon v3 e-red h-pos">Hot</span></li>
+                                                                    <li class="level3"><a href="pin_product.html" title="">Pin Product</a></li>
+                                                                    <li class="level3"><a href="360degree.html" title="">360 Degree</a><span class="h-ribbon v3 e-green h-pos">new</span></li>
+                                                                    <li class="level3"><a href="feature_video.html" title="">Featued video</a></li>
+                                                                    <li class="level3"><a href="simple.html">Simple</a></li>
+                                                                    <li class="level3"><a href="variable.html">Variable</a></li>
+                                                                    <li class="level3"><a href="affilate.html">External / Affiliate</a></li>
+                                                                    <li class="level3"><a href="grouped.html">Grouped</a></li>
+                                                                    <li class="level3"><a href="outofstock.html">Out of stock</a></li>
+                                                                    <li class="level3"><a href="onsale.html">On sale</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="level2 col-4">
+                                                                
+                                                                    <a href="#">Single Product Layout</a>
+                                                                    <ul class="menu-level-2">
+                                                                        <li class="level3"><a href="product_extended.html" title="">Product Extended</a><span class="h-ribbon v3 e-red h-pos">Hot</span></li>
+                                                                        <li class="level3"><a href="product_sidebar.html" title="">Product Left Sidebar</a></li>
+                                                                        <li class="level3"><a href="product_right_sidebar.html" title="">Product Right Sideba</a></li>
+                                                                    </ul>
+                                                                
+                                                                    <a href="#">Other Pages</a>
+                                                                    <ul class="menu-level-2">
+                                                                        <li class="level3"><a href="shop_full.html" title="">Shop</a></li>
+                                                                        <li class="level3"><a href="cart.html" title="">Cart</a></li>
+                                                                        <li class="level3"><a href="wishlist.html" title="">My Wishlist</a></li>
+                                                                        <li class="level3"><a href="checkout.html" title="">Checkout</a></li>
+                                                                        <li class="level3"><a href="myaccount.html" title="">My Account</a></li>
+                                                                        <li class="level3"><a href="track.html" title="">Track Your Order</a></li>
+                                                                        <li class="level3"><a href="quickview.html" title="">Quick View</a></li>
+
+                                                                    </ul>
+                                                                
+                                                            </li>
+                                                        </ul>
+                                                        <div class="clearfix"></div>
+
+                                                    </div>
+                                                </li>
+                                               
+                                                <li class="level1 active dropdown">
+                                                    <a href="#">Blog</a>
+                                                    <ul class="dropdown-menu menu-level-1">
+                                                        <li class="level2"><a href="blog-standar.html" title="Blog Standar">Blog Standar</a></li>
+                                                        <li class="level2"><a href="blog_grid.html" title="Blog Gird">Blog Gird</a></li>
+                                                        <li class="level2"><a href="blog-standar.html" title="Blog Sidebar">Blog Sidebar</a></li>
+                                                        <li class="level2"><a href="blog-single-post.html" title="Blog Single Post">Blog Single Post</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
                                         </div>
+                                    </nav>
+                                   <div class="header-bottom-right hidden-xs hidden-sm">
+                                       <img src="img/icon-ship.png" alt="" class="img-reponsive">
+                                       <span>Free Shipping on Orders $100</span>
+                                   </div>
+                                </div>
+                           </div>
+                       </div>
+               </div>
+           </div>
+        </header>
+        <!-- /header -->
+        <!--content-->
+        <div class="main-content space1">
+            <div class="container container-240">
+                <ul class="breadcrumb">
+                    <li><a href="#">Home</a></li>
+                    <li class="active">Cart</li>
+                </ul>
+                                </div>
+                          
+                        </div>
+                    </div>
+                </div>
+                <form name="checkout" method="POST" class="co" action="/payment-success">
+                    {{ csrf_field() }}
+                    <div class="cart-box-container-ver2">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="co-left bd-7">
+                                    <div class="cmt-title text-center abs">
+                                        <h1 class="page-title v1">Billing details</h1>
+                                    </div>
+                                    <div class="row form-customer">
+                                        <div class="form-group col-md-6">
+                                            <label for="inputfname_2" class=" control-label">First Name <span class="f-red">*</span></label>
+                                            <input type="text" id="inputfname_2" class="form-control form-account" name="fname">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="inputlname" class=" control-label">Last Name <span class="f-red">*</span></label>
+                                            <input type="text" id="inputlname" class="form-control form-account" name="lname">
+                                        </div>
+                                        <div class="form-group col-md-12">
+                                            <label for="inputcompany" class=" control-label">Company Name</label>
+                                            <input type="text" id="inputcompany" class="form-control form-account" name="company_name">
+                                        </div>
+                                        <div class="form-group col-md-12">
+                                            <label for="inputcountry1" class=" control-label">Country <span class="f-red">*</span></label>
+                                            
+                                            <input type="text" id="inputcountry1" class="form-control form-account" name="country">
+                                        </div>                                    
+                                        <div class="form-group col-md-12">
+                                            <label for="inputstreet" class=" control-label">Street address <span class="f-red">*</span></label>
+                                            <input type="text" id="inputstreet" class="form-control form-account" name="strt_add">
+                                        </div>
+                                        <div class="form-group col-md-12">
+                                            <label for="inputpostcode" class=" control-label">Postcode / ZIP</label>
+                                            <input type="text" id="inputpostcode" class="form-control form-account" name="zip">
+                                        </div>
+                                        <div class="form-group col-md-12">
+                                            <label for="inputfState" class=" control-label">Town / City <span class="f-red">*</span></label>
+                                            <input type="text" id="inputfState" class="form-control form-account" name="town_city">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="inputphone" class=" control-label">Phone <span class="f-red">*</span></label>
+                                            <input type="text" id="inputphone" class="form-control form-account" name="number">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="inputemail" class=" control-label">Email Address <span class="f-red">*</span></label>
+                                            <input type="text" id="inputemail" class="form-control form-account" name="email">
+                                        </div>
+                                        
                                     </div>
                                 </div>
-                                <div class="col-xl-5 col-lg-12">
-                                    <div class="row">
-                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                                            <div class="footer__widget">
-                                                <div class="footer__widget-title">
-                                                    <h4>My Account</h4>
-                                                </div>
-                                                <div class="footer__widget-content">
-                                                    <div class="footer__link">
-                                                        <ul>
-                                                            <li><a href="#"> About us </a></li>
-                                                            <li><a href="#">Delivery Information</a></li>
-                                                            <li><a href="#">Privacy Policy</a></li>
-                                                            <li><a href="#">Discount</a></li>
-                                                            <li><a href="#">Custom Service</a></li>
-                                                            <li><a href="#">Terms & Condition</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                                            <div class="footer__widget">
-                                                <div class="footer__widget-title">
-                                                    <h4>Payment & Shipping</h4>
-                                                </div>
-                                                <div class="footer__widget-content">
-                                                    <div class="footer__link">
-                                                        <ul>
-                                                            <li><a href="#">Terms Of Use</a></li>
-                                                            <li><a href="#">Payment Methods</a></li>
-                                                            <li><a href="#">Shipping Guide</a></li>
-                                                            <li><a href="#">Locations We Ship To</a></li>
-                                                            <li><a href="#">Estimated Delivery Time</a></li>
-                                                            <li><a href="#">Express</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                              
+                                    
+                      
+            </div>
+        </div> 
+       
+            </div>
+            </div>
+        </div> 
+        <!-- / end content -->
+        <footer>
+            <div class="f-top">
+                <div class="container container-240">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                            <div class="footer-block footer-about">
+                                <div class="f-logo">
+                                    <a href="#"><img src="img/logo.png" alt="" class="img-reponsive"></a>
+                                </div>
+                                <ul class="footer-block-content">
+                                    <li class="address">
+                                        <span>45 Grand Central Terminal New York,NY 1017 United State USA</span>
+                                    </li>
+                                    <li class="phone">
+                                        <span>(+123) 456 789 - (+123) 666 888</span>
+                                    </li>
+                                    <li class="email">
+                                        <span>Contact@yourcompany.com</span>
+                                    </li>
+                                    <li class="time">
+                                        <span>Mon-Sat 9:00pm - 5:00pm  &nbsp;&nbsp;&nbsp;  Sun : Closed</span>
+                                    </li>
+                                </ul>
+                                <div class="footer-social social">
+                                    <h3 class="footer-block-title">Follow us</h3>
+                                    <a href="#" class="fa fa-twitter"></a>
+                                    <a href="#" class="fa fa-dribbble"></a>
+                                    <a href="#" class="fa fa-behance"></a>
+                                    <a href="#" class="fa fa-instagram"></a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!--<div class="footer__bottom pt-60 pb-60">
-                         <div class="container">
-                            <div class="row">
-                                <div class="col-xl-12">
-                                    <div class="footer__links text-center">
-                                        <p>
-                                            <a href="#">Air Conditioners</a>
-                                            <a href="#">Audios & Theaters</a>
-                                            <a href="#">Car Electronics</a>
-                                            <a href="#">Office Electronics</a>
-                                            <a href="#">TV Televisions</a>
-                                            <a href="#">Washing Machines</a>
-                                        </p>
-                                        <p>
-                                            <a href="#">Cookware</a>
-                                            <a href="#">Decoration</a>
-                                            <a href="#">Furniture </a>
-                                            <a href="#">Garden Tools</a>
-                                            <a href="#">Garden Equipments</a>
-                                            <a href="#">Powers And Hand Tools </a>
-                                            <a href="#">Utensil & Gadget </a>
-                                            <a href="#">Printers</a>
-                                            <a href="#">Projectors</a>
-                                            <a href="#">Scanners</a>
-                                            <a href="#">Store</a>
-                                            <a href="#">Business</a>
-                                        </p>
-                                        <p>
-                                            <a href="#">4K Ultra</a>
-                                            <a href="#"> HD TVs </a>
-                                            <a href="#">LED TVs</a>
-                                            <a href="#">OLED TVs</a>
-                                            <a href="#">Desktop</a>
-                                            <a href="#">PC</a>
-                                            <a href="#">Laptop</a>
-                                            <a href="#">Smartphones</a>
-                                            <a href="#">Tablet</a>
-                                            <a href="#">Game Controller</a>
-                                            <a href="#">Audio & Video</a>
-                                            <a href="#"> Wireless Speaker</a>
-                                            <a href="#">Drone</a>
-                                        </p>
-                                    </div>
-                                    <div class="footer__download text-center">
-                                        <h4>Download The App - Get 30% Sale Coupon</h4>
-                                        <a href="#" class="m-img"><img src="assets/img/icon/app-store.jpg" alt=""></a>
-                                    </div>
-                                </div>
+                        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                            <div class="footer-block">
+                                <h3 class="footer-block-title">Quick menu</h3>
+                                <ul class="footer-block-content">
+                                    <li><a href="#">TV & Video</a></li>
+                                    <li><a href="#">Home Audio & Theater</a></li>
+                                    <li><a href="#">Camera, Photo & Video</a></li>
+                                    <li><a href="#">Cell Phones & Accessories</a></li>
+                                    <li><a href="#">Headphones</a></li>
+                                    <li><a href="#">Video Games</a></li>
+                                    <li><a href="#">Bluetooth & Wireless Speakers</a></li>
+                                    <li><a href="#">Car Electronics</a></li>
+                                </ul>
                             </div>
-                        </div> 
-                    </div>-->
-                    <div class="footer__copyright pt-30 pb-35 footer-bottom-bg">
-                        <div class="container">
-                            <div class="row align-items-center">
-                                <div class="col-xl-6 col-lg-6">
-                                    <div class="footer__copyright-text">
-                                        <p>Copyright © <a href="index.html">Topico.</a> All Rights Reserved.</p>
-                                    </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+                            <div class="footer-block">
+                                <h3 class="footer-block-title">Customer Service</h3>
+                                <ul class="footer-block-content">
+                                    <li><a href="#">My Account</a></li>
+                                    <li><a href="#">Track your Order</a></li>
+                                    <li><a href="#">Returns/Exchange</a></li>
+                                    <li><a href="#">FAQs</a></li>
+                                    <li><a href="#">Customer Service</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="footer-block">
+                                <div class="footer-block-phone">
+                                    <h3 class="footer-block-title">Hot Line</h3>
+                                    <p class="phone-desc">Call Us toll Free</p>
+                                    <p class="phone-light">(+123) 456 789 or (+123) 666 888</p>
                                 </div>
-                                <div class="col-xl-6 col-lg-6">
-                                    <div class="footer__payment f-right">
-                                        <a href="#" class="m-img"><img src="assets/img/icon/payment.png" alt=""></a>
-                                    </div>
+                                <div class="footer-block-newsletter">
+                                    <h3 class="footer-block-title">Subscription</h3>
+                                    <p>Register now to get updates on promotions and coupons.</p>
+                                    <form class="form_newsletter" action="#" method="post">
+                                        <input type="email" value="" placeholder="Enter your emaill adress" name="EMAIL" id="mail2" class="newsletter-input form-control">
+                                        <button id="subscribe2" class="button_mini btn btn-gradient" type="submit">
+                                            Subscribe
+                                        </button>
+                                    </form>
                                 </div>
+                                
                             </div>
                         </div>
                     </div>
                 </div>
-            </footer>
+            </div>
+            <div class="f-bottom">
+                <div class="container container-240">
+                    <div class="row flex lr">
+                        <div class="col-xs-6 f-copyright"><span>© 2010-2018 EngoTheme. All rights reserved.</span></div>
+                        <div class="col-xs-6 f-payment hidden-xs">
+                            <a href="#"><img src="img/payment/mastercard.png" alt="" class="img-reponsive"></a>
+                            <a href="#"><img src="img/payment/paypal.png" alt="" class="img-reponsive"></a>
+                            <a href="#"><img src="img/payment/visa.png" alt="" class="img-reponsive"></a>
+                            <a href="#"><img src="img/payment/american-express.png" alt="" class="img-reponsive"></a>
+                            <a href="#"><img src="img/payment/western-union.png" alt="" class="img-reponsive"></a>
+                            <a href="#"><img src="img/payment/jcb.png" alt="" class="img-reponsive"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- /footer -->
+        <!-- /footer -->
+    </div>
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    
+    <script src="js/main.js"></script>
+</body>
 
-		<!-- JS here -->
-        <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
-        <script src="assets/js/vendor/waypoints.min.js"></script>
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/js/meanmenu.js"></script>
-        <script src="assets/js/slick.min.js"></script>
-        <script src="assets/js/backToTop.js"></script>
-        <script src="assets/js/jquery.fancybox.min.js"></script>
-        <script src="assets/js/countdown.js"></script>
-        <script src="assets/js/nice-select.min.js"></script>
-        <script src="assets/js/isotope.pkgd.min.js"></script>
-        <script src="assets/js/owl.carousel.min.js"></script>
-        <script src="assets/js/magnific-popup.min.js"></script>
-        <script src="assets/js/jquery-ui-slider-range.js"></script>
-        <script src="assets/js/ajax-form.js"></script>
-        <script src="assets/js/wow.min.js"></script>
-        <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-        <script src="assets/js/main.js"></script>
-    </body>
 </html>
